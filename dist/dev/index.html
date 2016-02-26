@@ -11,9 +11,9 @@
 </head>
 <body>
 
-  <sd-app>Loading...</sd-app>
+<sd-app>Loading...</sd-app>
 
-  <script>
+<script>
   // function.name (all IE)
   // Remove once https://github.com/angular/angular/issues/6501 is fixed.
   /*! @source http://stackoverflow.com/questions/6903762/function-name-not-supported-in-ie*/
@@ -29,44 +29,35 @@
       }
     });
   }
-  </script>
+</script>
 
-  <script>
+<script>
   // Fixes undefined module function in SystemJS bundle
   function module() {}
-  </script>
+</script>
 
-  <!-- shims:js -->
-  <script src="/node_modules/systemjs/dist/system-polyfills.src.js?1456521605359"></script>
-  <script src="/node_modules/reflect-metadata/Reflect.js?1456521605360"></script>
-  <script src="/node_modules/es6-shim/es6-shim.js?1456521605360"></script>
-  <script src="/node_modules/systemjs/dist/system.src.js?1456521605360"></script>
-  <script src="/node_modules/angular2/bundles/angular2-polyfills.js?1456521605361"></script>
-  <!-- endinject -->
+<!-- shims:js -->
+<script src="./node_modules/systemjs/dist/system-polyfills.src.js"></script>
+<script src="./node_modules/reflect-metadata/Reflect.js"></script>
+<script src="./node_modules/es6-shim/es6-shim.js"></script>
+<script src="./node_modules/systemjs/dist/system.src.js"></script>
+<script src="./node_modules/angular2/bundles/angular2-polyfills.js"></script>
+<!-- endinject -->
 
-  
-  <script>System.config({"defaultJSExtensions":true,"paths":{"main":"/main","angular2/*":"/angular2/*","rxjs/*":"/rxjs/*","*":"/node_modules/*"},"packages":{"angular2":{"defaultExtension":false},"rxjs":{"defaultExtension":false}}})</script>
-  
 
-  <!-- libs:js -->
-  <script src="/node_modules/rxjs/bundles/Rx.js?1456521605362"></script>
-  <script src="/node_modules/angular2/bundles/angular2.js?1456521605362"></script>
-  <script src="/node_modules/angular2/bundles/router.js?1456521605363"></script>
-  <script src="/node_modules/angular2/bundles/http.js?1456521605363"></script>
-  <!-- endinject -->
+<script>System.config({"defaultJSExtensions":true,"paths":{"main":"/main","angular2/*":"/angular2/*","rxjs/*":"/rxjs/*","*":"/node_modules/*"},"packages":{"angular2":{"defaultExtension":false},"rxjs":{"defaultExtension":false}}})</script>
 
-  <!-- inject:js -->
-  <!-- endinject -->
 
-  
-  <script>
-  System.import('main')
-    .catch(function (e) {
-      console.error(e,
-        'Report this error at https://github.com/mgechev/angular2-seed/issues');
-    });
-  </script>
-  
+<!-- libs:js -->
+<script src="./node_modules/rxjs/bundles/Rx.js"></script>
+<script src="./node_modules/angular2/bundles/angular2.js"></script>
+<script src="./node_modules/angular2/bundles/router.js"></script>
+<script src="./node_modules/angular2/bundles/http.js"></script>
+<!-- endinject -->
+
+<!-- inject:js -->
+<!-- endinject -->
+
 
 </body>
 </html>
