@@ -1,0 +1,26 @@
+<div>
+  <div *ngIf="!!!runners.length" style="position:relative;">
+    <div class="loaders" style="background:#ed5565;position:absolute; right:50%">
+     <div class="loader" >
+       <div class="loader-inner ball-grid-pulse">
+         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+       </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <ul class="collection">
+    <li class="collection-item avatar" *ngFor="#runner of runners | paginate: { itemsPerPage: 20, currentPage: page }">
+      <img src={{runner.profileImg}} alt="" class="circle">
+      <span class="title" style="font-size:20px;color:#1BA39C;">{{runner.name}}</span>
+      <p>City: {{runner.city}} <br>
+        Event Count: {{runner.eventCount}}
+      </p>
+      <a href={{runner.runnersProfile}} class="secondary-content">View Profile </a>
+    </li>
+    </ul>
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>
