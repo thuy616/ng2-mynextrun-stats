@@ -1,5 +1,5 @@
 :host {
-  background-color: #106CC8;
+  background-color: #5da20b;
   color: rgba(255,255,255,0.87);
   display: block;
   height: 48px;
@@ -7,6 +7,7 @@
 }
 
 h1 {
+  text-align: center;
   display: inline;
   font-size: 20px;
   font-weight: normal;

@@ -1,0 +1,15 @@
+li {
+  font-weight: 200;
+}
+
+li .title {
+  font-weight: 400;
+}
+
+.loaders {
+  text-align: center;
+}
+
+.ball {
+  background: pink;
+}

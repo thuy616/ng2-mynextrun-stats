@@ -1,0 +1,43 @@
+li  {
+  text-align: center;
+  display: inline-block;
+  margin: 10px 10px;
+  border-radius: 25px;
+  background: #26a69a;
+  padding: 20px;
+  width: 200px;
+  color: #fff;
+}
+
+.text-suggest{
+  color: #888888;
+  font-style: italic;
+}
+
+.countries {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.countries li:hover {
+  cursor: pointer;
+  background: #d4d4d4;
+  color: #26a69a;
+}
+
+.countries li.selected {
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid #26a69a;
+  color: #26a69a;
+}
+
+
+h2, h2, h3, h4 {
+  color: #8c8c8c;
+}
+
+
+.countries.loaded {
+  opacity: 1;
+}
